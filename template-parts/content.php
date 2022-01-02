@@ -23,7 +23,7 @@
 			<div class="entry-meta">
 				<?php
 				faithstrattoncakes_posted_on();
-				faithstrattoncakes_posted_by();
+				// faithstrattoncakes_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
