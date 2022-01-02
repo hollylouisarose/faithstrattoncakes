@@ -1,4 +1,9 @@
-/* global styles */
+/* temporary style, to remove edit link when styling page */
+.entry-footer {
+  display: none;
+}
+
+/* Global styles */
 
 * {
   -webkit-box-sizing: border-box;
@@ -11,6 +16,10 @@
 :root {
   --darkbrown: #45301C;
   --mainbackground: #F9F5F0;
+  --orange: #FFA67A;
+  --yellow: #FFEC9E;
+  --green: #86A26D;
+  --pink: #F99290;
 }
 
 
@@ -31,7 +40,13 @@ a {
   color: var(--darkbrown);
 }
 
-/* type styles */
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Type styles */
 
 h1, h2, h3, h4, h5 {
   font-family: 'aesthet-nova';
@@ -52,7 +67,19 @@ h4 {font-size: 1.563rem;}
 
 h5 {font-size: 1.25rem;}
 
-ul {list-style: none;}
+/* Footer styles */
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 2rem;
+  border-top: solid 4px var(--pink)
+}
+
+footer ul li {
+  margin-bottom: 0.6rem;
+}
 
 
 
