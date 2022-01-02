@@ -13,18 +13,16 @@
 
 	<footer id="colophon" class="site-footer">
   <div class="footer-nav">
-				<?php
-				wp_nav_menu(
-					array(
-						'theme_location' => 'menu-2',
-						'menu_id'        => 'footer-menu',
-						'menu_class'		 => 'footer-menu'
-					)
-				);
-				?>
+  <?php
+			wp_nav_menu(
+				array(
+					'theme_location' => 'menu-2',
+          'menu-id' => 'footer-menu'
+				)
+			);
+			?>	
 	</div>
   <div>
-    <p>email</p>
     <p>&copy Faith Stratton Cakes Ltd <?php echo date("Y"); ?> All Rights Reserved</p>
   </div>
 	</footer><!-- #colophon -->
