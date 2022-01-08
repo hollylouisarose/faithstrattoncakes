@@ -1,16 +1,14 @@
 
-const siteNavigation = document.querySelector('#site-navigation')
+const main = document.querySelector('main')
 const menuButton = document.querySelector('#menu')
+const siteNav = document.querySelector('#site-navigation')
 
-const handleWindowWidth = () => {
-  console.log('width', window.innerWidth)
-  siteNavigation.classList.remove('mobile')
-  if(window.innerWidth < 600){
-    siteNavigation.classList.add('mobile')
-    menuButton.style.display = 'block'
-  }
+console.log(main)
+console.log(siteNav)
+
+const handleMenuButton = () => {
+  main.classList.add('menu-open')
+  siteNav.classList.add('menu-open')
 }
 
-handleWindowWidth()
-
-window.addEventListener('resize', handleWindowWidth)
+document.addEventListener('click', handleMenuButton)
