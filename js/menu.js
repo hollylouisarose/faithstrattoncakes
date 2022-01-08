@@ -7,8 +7,16 @@ console.log(main)
 console.log(siteNav)
 
 const handleMenuButton = () => {
-  main.classList.add('menu-open')
-  siteNav.classList.add('menu-open')
+  main.classList.toggle('menu-open')
+  siteNav.classList.toggle('menu-open')
+  siteNav.classList.toggle('open')
+  if(siteNav.classList.contains('open')){
+    menuButton.innerHTML = 'Close'
+  } else {
+    menuButton.innerHTML = 'Menu'
+  }
+  
 }
+
 
 document.addEventListener('click', handleMenuButton)
